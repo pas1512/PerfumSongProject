@@ -1,0 +1,89 @@
+.item-card{
+    background-color: #212529;
+    aspect-ratio: 2 / 2.5;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-card div{
+    margin: 1% auto;
+}
+
+.item-view{
+    background-color: #f4f1e6;
+    width: 100%;
+    flex-grow: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-view img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.item-text{
+    width: 87%;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.item-header{
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+}
+
+.item-description{
+    color: #5D666F;
+    font-size: 18px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+}
+
+.item-shop{
+    width: 87%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-price{
+    color: #7B7562;
+    font-size: 28px;
+}
+
+.item-add{
+    color: #ABA48D;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .item-card {
+        /*width: 90%; /* або 100%, або flex-basis: 100% */
+        aspect-ratio: unset; /* або адаптоване */
+    }
+
+    .item-header {
+        font-size: 24px;
+    }
+
+    .item-price,
+    .item-add {
+        font-size: 22px;
+    }
+}
